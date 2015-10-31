@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Fri Oct 30 19:43:43 ART 2015
+markTmpDer=false
+builderNum=2
+outputDir=Resoluci\u00F3n/
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=TIP_Resolucion_Nueva.tex
+outputFile=TIP_Resolucion_Nueva.pdf
+langSpell=es
+markDer=false
+srcDir=Resoluci\u00F3n/

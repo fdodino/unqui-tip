@@ -1,0 +1,29 @@
+
+\newcounter{anexosCounter}
+\newcommand{\anexo}[1]{\stepcounter{anexosCounter} {\bfseries %
+	\begin{center} %
+	ANEXO \Roman{anexosCounter} \\% 
+	#1% 
+	\end{center}}% 
+	\par%
+}
+
+\newcommand{\resetAnexosCounter}{\setcounter{anexosCounter}{0}}
+\newcommand{\resetCapitulosCounter}{\setcounter{capitulosCounter}{0}}
+\newcommand{\resetArticulosCounter}{\setcounter{articulosCounter}{0}}
+\newcommand{\resetAllCounters}{\resetAnexosCounter \resetArticulosCounter \resetCapitulosCounter}
+
+\newcounter{capitulosCounter}
+
+\newcommand{\capitulo}[1]{{\bfseries \stepcounter{capitulosCounter} CAPÍTULO
+\arabic{capitulosCounter}º. #1} \par}
+
+\newcounter{articulosCounter}
+\newcommand{\articulo}{{\bfseries \stepcounter{articulosCounter} ARTÍCULO
+\arabic{articulosCounter}º. }}
+
+\newcommand{\param}[1]{\emph{\textless #1\textgreater}}
+
+
+
+\setlength{\parskip}{1em}
