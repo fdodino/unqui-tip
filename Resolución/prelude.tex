@@ -10,13 +10,18 @@
 
 \newcommand{\resetAnexosCounter}{\setcounter{anexosCounter}{0}}
 \newcommand{\resetCapitulosCounter}{\setcounter{capitulosCounter}{0}}
+\newcommand{\resetSeccionesCounter}{\setcounter{seccionesCounter}{0}}
 \newcommand{\resetArticulosCounter}{\setcounter{articulosCounter}{0}}
 \newcommand{\resetAllCounters}{\resetAnexosCounter \resetArticulosCounter \resetCapitulosCounter}
 
 \newcounter{capitulosCounter}
+\newcounter{seccionesCounter}
 
 \newcommand{\capitulo}[1]{{\bfseries \stepcounter{capitulosCounter} CAPÍTULO 
 \arabic{capitulosCounter}º. #1} \par}
+
+\newcommand{\seccion}[1]{{\bfseries \stepcounter{seccionesCounter} SECCIÓN
+\arabic{seccionesCounter}º. #1} \par}
 
 \newcounter{articulosCounter}
 \newcommand{\articulo}{{\bfseries \stepcounter{articulosCounter} ARTÍCULO
@@ -24,6 +29,6 @@
 
 \newcommand{\param}[1]{\emph{\textless #1\textgreater}}
 
-
+\newcommand{\profesorTIP}[1]{{profesor del curso}}
 
 \setlength{\parskip}{1em}
