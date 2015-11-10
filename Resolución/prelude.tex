@@ -1,4 +1,7 @@
 
+
+
+
 \newcounter{anexosCounter}
 \newcommand{\anexo}[1]{\stepcounter{anexosCounter} {\bfseries %
 	\begin{center} %
@@ -27,8 +30,39 @@
 \newcommand{\articulo}{{\bfseries \stepcounter{articulosCounter} ARTÍCULO
 \arabic{articulosCounter}º. }}
 
+
+
 \newcommand{\param}[1]{\emph{\textless #1\textgreater}}
 
 \newcommand{\profesorTIP}{{profesor del curso}}
 
 \setlength{\parskip}{1em}
+
+%\InputIfFileExists{preludeauxfile}{\typeout{preludeauxfile file
+%	doesn't exist}}
+
+\newcommand{\ordinal}{\textsuperscript{o}}
+\newcommand{\referencia}[1]{
+	
+	%Como no andaba si ponía el ordinal dentro del edef, hice un edef auxiliar y un
+	% comando que lo llama y le agrega el ordinal
+	\expandafter\edef\csname art#1Aux\endcsname{art\'iculo
+	\arabic{articulosCounter}}
+
+	\expandafter\newcommand\expandafter{\csname art#1\endcsname}{\csname
+	art#1Aux\endcsname º}
+
+	\expandafter\edef\csname cap#1Aux\endcsname{cap\'itulo
+	\arabic{capitulosCounter}}
+
+	\expandafter\newcommand\expandafter{\csname cap#1\endcsname}{\csname
+	art#1Aux\endcsname º}
+		
+	
+} %\newwrite\preludeauxfile
+
+ \AtBeginDocument{
+ %	\typeout{creating auxfile 1}
+ % 	\immediate\openout\preludeauxfile=preludeauxfile.tex
+
+ }
