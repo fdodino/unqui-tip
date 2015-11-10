@@ -1,5 +1,7 @@
+\newcommand{\ordinal}{º}
 
-
+\newcommand{\modoTutorado}{tutoría libre}
+\newcommand{\modoCursada}{cursada presencial}
 
 
 \newcounter{anexosCounter}
@@ -38,31 +40,52 @@
 
 \setlength{\parskip}{1em}
 
-%\InputIfFileExists{preludeauxfile}{\typeout{preludeauxfile file
-%	doesn't exist}}
+\InputIfFileExists{preludeauxfile}{\typeout{preludeauxfile file
+	doesn't exist}}
 
-\newcommand{\ordinal}{\textsuperscript{o}}
+
+
+
+
 \newcommand{\referencia}[1]{
 	
-	%Como no andaba si ponía el ordinal dentro del edef, hice un edef auxiliar y un
-	% comando que lo llama y le agrega el ordinal
-	\expandafter\edef\csname art#1Aux\endcsname{art\'iculo
-	\arabic{articulosCounter}}
+%	\expandafter\edef\csname art#1Aux\endcsname{art\'iculo
+%	\arabic{articulosCounter}}
 
-	\expandafter\newcommand\expandafter{\csname art#1\endcsname}{\csname
-	art#1Aux\endcsname º}
+%	\expandafter\newcommand\expandafter{\csname art#1\endcsname}{\csname
+%	art#1Aux\endcsname º}
 
-	\expandafter\edef\csname cap#1Aux\endcsname{cap\'itulo
-	\arabic{capitulosCounter}}
+%	\expandafter\edef\csname cap#1Aux\endcsname{cap\'itulo
+%	\arabic{capitulosCounter}}
 
-	\expandafter\newcommand\expandafter{\csname cap#1\endcsname}{\csname
-	art#1Aux\endcsname º}
+%	\expandafter\newcommand\expandafter{\csname cap#1\endcsname}{\csname
+%	art#1Aux\endcsname º}
+
+	\immediate\write\preludeauxfile{
+		\noexpand\expandafter\noexpand\newcommand\noexpand\expandafter{\noexpand\csname
+		art#1\noexpand\endcsname}{art\noexpand\'iculo
+		\arabic{articulosCounter}\noexpand\ordinal}
+	}
+	\immediate\write\preludeauxfile{
+		\noexpand\expandafter\noexpand\newcommand\noexpand\expandafter{\noexpand\csname
+		cap#1\noexpand\endcsname}{cap\noexpand\'itulo
+		\arabic{capitulosCounter}\noexpand\ordinal}		
+	}
+	\immediate\write\preludeauxfile{
+		\noexpand\expandafter\noexpand\newcommand\noexpand\expandafter{\noexpand\csname
+		sec#1\noexpand\endcsname}{secci\noexpand\'on
+		\arabic{capitulosCounter}\noexpand\ordinal}		
+	}
+	\immediate\write\preludeauxfile{
+		\noexpand\expandafter\noexpand\newcommand\noexpand\expandafter{\noexpand\csname
+		anexo#1\noexpand\endcsname}{anexo
+		\Roman{anexosCounter}}		
+	}
 		
 	
-} %\newwrite\preludeauxfile
+} \newwrite\preludeauxfile
+
 
  \AtBeginDocument{
- %	\typeout{creating auxfile 1}
- % 	\immediate\openout\preludeauxfile=preludeauxfile.tex
-
+  	\immediate\openout\preludeauxfile=preludeauxfile.tex
  }
