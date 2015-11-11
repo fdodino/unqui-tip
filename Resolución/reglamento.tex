@@ -44,11 +44,19 @@ integrantes. \referencia{Horas}
 
 \articulo Para presentar la propuesta de realización del TIP, el o
 los estudiantes deberán acreditar un 80\% del total de créditos necesarios para
-acceder al título de Técnico. 
+acceder al título de Técnico. \cambio{Se mueve la condición para la defensa del
+tip (una asignatura pendiente) porque cambia el concepto de defensa para el
+modo cursada}
+\referencia{CondInscripcion}
 
 \articulo El tema deberá estar dentro de la órbita de incumbencia del título de técnico y
 podrá ser autocontenido o parte integrante de un desarrollo más complejo para ser
 eventualmente continuado o completado por otro u otros TIPs.
+
+\articulo Tanto el software como la documentación desarrollada como producto
+directo del TIP deben poseer licencias libres. Podrá admitirse excepciones a
+este artículo mediante debida justificación.
+\nuevo{Se pide abiertamente software y documentación libre}
 
 \articulo El TIP podrá tener alguna de las siguientes modalidades:
 \begin{enumerate}
@@ -59,14 +67,18 @@ empresa u organización estatal o privada.
 \modoTutorado.
 \item Proyecto de desarrollo de un producto de software, en modalidad \modoCursada.
 \end{enumerate}
-
+\nuevo{agrega otra modalidad}
 
 El \capTradicional rige únicamente para las tres primeras modalidades
 El \capCursada rige únicamente para la cuarta modalidad.
-
+\nuevo{separa la reglamentacion de las modalidades tradicionales y la nueva
+modalidad}
 
 \capitulo{ REGLAMENTACIÓN DEL TRABAJO DE INSERCIÓN PROFESIONAL MEDIANTE TUTORÍA LIBRE, INVESTIGACIÓN O PRÁCTICA PROFESIONAL}
 \referencia{Tradicional}
+\nuevo{se agrupa en un capítulo todos los antoguos capítulos que hacen
+referencia a los modos tradicionales. Los antiguos capítulos son renombrados
+como secciones}
 
 %TODO llevarme esto al capitulo tradicional
 %Para la defensa del TIP, no podrán adeudar más de
@@ -103,10 +115,12 @@ antigüedad.
 \item Ser profesional de la industria informática con reconocida trayectoria en
 temas afines al tema del trabajo.
 \end{enumerate}
+\nota{eliminar la antiguedad requerida?}
 
 \articulo Cuando el director sea externo a la UNQ y no hubiera figura de
 Codirector interno, deberá designarse un profesor ordinario o interino como tutor
-académico de la institución.
+académico de la institución. \nota{Esto no lo cambié, pero lo que pasa es que
+siempre exigimos un codirector interno y no usamos la figura de tutor académico}
 
 \articulo El Director y Codirector sólo podrán dirigir y/o codirigir hasta 3
 (tres) trabajos simultáneamente. 
@@ -115,7 +129,7 @@ académico de la institución.
 \begin{itemize}
  \item Decidir con el estudiante el tema y plan del TIP verificando que la
  propuesta puede desarrollarse en los tiempos establecidos en el
- \artHoras y \artTiempo.
+ \artHoras.
  \item Supervisar el efectivo cumplimiento y dedicación del estudiante en
  sus actividades, estableciendo un método de seguimiento y
  manteniendo reuniones periódicas con el estudiante.
@@ -139,8 +153,8 @@ académico de la institución.
 
 \articulo Para comenzar el TIP, el estudiante deberá solicitar la aceptación
 de su propuesta de Trabajo de Inserción Profesional mediante una presentación (ver
-Anexo 1) firmada por el Director propuesto (y Codirector si lo hubiere) y el o los
-estudiantes. En la misma deberá constar:
+\anexoPresentacionPlan) firmada por el Director propuesto (y Codirector si lo
+hubiere) y el o los estudiantes. En la misma deberá constar:
 
 \begin{enumerate}[a.]
 \item Tema del TIP.
@@ -148,6 +162,9 @@ estudiantes. En la misma deberá constar:
 \item Objetivos del trabajo.
 \item Lugar donde se realizará el trabajo.
 \item Plan de trabajo propuesto y su cronograma.
+\item Licencias con las cuáles se distribuirán el código fuente y la
+documentación.
+Justificación en caso de licencia privativa \nuevo{ }
 \item Fuentes iniciales de información y referencia.
 \item Porcentaje de asignaturas aprobadas por cada uno de los estudiantes.
 \item Foja académica de cada uno de los estudiantes.
@@ -160,11 +177,12 @@ receso invernal.
 
 \articulo La propuesta debidamente encarpetada debe ser entregada al
 Director de la Carrera, quién podrá consultar a profesores de asignaturas afines al
-tema de trabajo y al Director o Codirector propuesto, y luego, en un plazo no mayor a
-15 días de recibida la propuesta, elevará un dictamen al Consejo departamental,
+tema de trabajo, licencias y al Director o Codirector propuesto, y luego, en un
+plazo no mayor a 15 días de recibida la propuesta, elevará un dictamen al Consejo departamental,
 quién decidirá sobre su aprobación. Tanto el Director de la Carrera como la Comisión de Investigación
 Científica y Tecnológica podrán solicitar los ajustes que consideren necesarios para la
 admisión de los TIPs. 
+\nuevo{se agrega las licencias}
 
 \articulo Si el trabajo se realiza en un ámbito externo a la UNQ, deberá
 contarse con el aval de la empresa o institución correspondiente. El Director de la
@@ -242,6 +260,7 @@ utilizado en el proceso inconcluso.
 
 \articulo La culminación del TIP implica su presentación en formatos digital y
  escrito y su defensa oral y pública.
+ \nuevo{agrega el concepto de entrega digital}
 
 \articulo Para la evaluación del TIP se formará
 un Jurado evaluador, propuesto por el Director del trabajo y conformado por el
@@ -269,20 +288,42 @@ con una aceptación de la tarea por parte de los mismos. En el caso de los jurad
 internos de la UNQ podrán excusarse mediante justificación debidamente fundada. 
 
 \seccion{ENTREGA DEL TRABAJO}
+\cambio{Antes se llamaba PRESENTACION DEL INFORME}
 
 \articulo La presentación del trabajo será realizada en primera instancia en
 formato digital. La misma debe ir acompañada de una nota escrita en la que se
-propone los integrantes del jurado al Director de carrera, según el \anexoEntregaDigitalTIP
+propone los integrantes del jurado al Director de carrera, según el
+\anexoEntregaDigitalTIP.
+\cambio{Antes se pedia un formato escrito en esta instancia}
 
 \articulo La entrega incluye la realización de un informe y el código fuente del
 trabajo. El informe debe incluir en su cuerpo o en forma de anexos,
-documentación de diseño de software y manual de instalación. 
+documentación de diseño de software e instrucciones de instalación y
+configuración.
+\nuevo{Antes se pedía solo el informe y no estaba explícito que debía
+contener. Se solicita ahora además del informe la entrega del código fuente.
+Además, que el informe incluya la documentación de diseño y el manual de
+instalación y configuración. Se busca reemplazar el estilo de un informe que
+tiene mucha prosa a un estilo con mayor documentación técnica.}
+\nota{¿Ser más explícito acerca de lo que se espera del informe o no? ¿Pedir
+explícitamente que explique el problema? ¿Pedir que incluya explicaciones de
+cuestiones teóricas que entran en juego en el trabajo?}
 
-\articulo La presentación por escrito del TIP deberá ser realizada teniendo
-en cuenta las recomendaciones que figuran en el \anexoPresentacionInforme, acompañada de una nota
+\articulo En el caso de realizar el trabajo con licencias privativas, el director del trabajo 
+propondrá, con el aval de la dirección de carrera,
+un mecanismo por el cual el jurado tenga acceso al material licenciado para su
+evaluación. 
+\nuevo{es responsabilidad del director de trabajo que el jurado tenga acceso a
+todo}
+
+\articulo La presentación por escrito del informe TIP deberá ser realizada
+teniendo en cuenta las recomendaciones que figuran en el \anexoPresentacionInforme, acompañada de una nota
 según el modelo del \anexoPresentacionInformeEscrito. La misma debe realizarse
-luego de la aceptación del jurado para la defensa oral, y antes de llevarse a
-cabo la misma..
+luego de la habilitación del jurado para la defensa oral, y antes de llevarse a
+cabo la misma.
+\cambio{aclaro que la presentación escrita es el informe. el trabajo completo
+está digital}
+\cambio{La entrega escrita es posterior al que jurado da el OK}
 
 \articulo En primera instancia se remitirá al Jurado todo el material entregado
 en formato electrónico para la elaboración del dictamen inicial. El Jurado tendrá un
@@ -297,19 +338,26 @@ tres alternativas:
 \item Rechazado con dictamen fundado.
 \end{enumerate}
 
-\articulo En el caso del Art. 33°, inciso a., los estudiantes estarán
-habilitados para la presentación oral. 
+\cambio{Se entrega todo el material electronico para la evaluacion}
+\referencia{DictamenInicial}
 
-\articulo En el caso del Art. 33°, inciso b., los estudiantes podrán rehacer
+\articulo En el caso del \artDictamenInicial, inciso a., los estudiantes
+estarán habilitados para la presentación oral. 
+
+\articulo En el caso del Art. \artDictamenInicial, inciso b., los estudiantes podrán rehacer
 la presentación una única vez, con las consideraciones que haya sugerido el Jurado.
 En función de las correcciones realizadas, el Jurado determinará un plazo de entre
 uno y tres meses para la realización de las modificaciones y solicitar un nuevo
 dictamen inicial.
 
-\articulo En el caso del Art. 33°, inciso c., los estudiantes entrarán en las
-condiciones pautadas en el Art. 25°. 
+\articulo En el caso del Art. \artDictamenInicial, inciso c., los estudiantes entrarán en las
+condiciones pautadas en el Art. \artFinalizado. 
 
 \seccion{DEFENSA ORAL}
+
+\articulo Para proceder a la defensa oral, el o los alumnos podrán adeudar a lo
+sumo 1 materia. \nota{no es nuevo, estaba en uno de los primeros artículos y lo
+moví acá para que no conflictúe con la modalidad presencial}
 
 \articulo Una vez habilitados para la defensa oral, los estudiantes
 entregarán 2 (dos) ejemplares impresos de la versión definitiva a la Dirección de la
@@ -330,50 +378,73 @@ consideraciones de los miembros del tribunal.
 \articulo En la defensa oral y pública el dictamen del jurado, con el criterio
 de la mayoría simple, podrá resultar: 
 \begin{enumerate}[a.]
-\item Aprobado con dictamen fundado.
-\item Rechazado con dictamen fundado.
+\item Aprobado con dictamen fundado, con una nota numérica entre 4 y 10.
+\item Rechazado con dictamen fundado, con una nota numérica entre 1 y 3.
 \end{enumerate}
 
+\nuevo{Agrego la nota numérica, es algo que ya se venía haciendo, pero no
+quedaba en el dictámen, si no en las actas de alumnos.}
 
 \capitulo{REGLAMENTACIÓN DEL TRABAJO DE INSERCIÓN PROFESIONAL MEDIANTE CURSADA PRESENCIAL}
 \referencia{Cursada}
+\nuevo{Todo el capítulo es nuevo}
 
-\seccion{ DIRECCIÓN DEL TRABAJO DE INSERCIÓN PROFESIONAL}
+\seccion{ RÉGIMEN DE CURSADA}
 
-\articulo El TIP deberá contar con una dirección. La misma será llevada a
-cabo por el \profesorTIP{}. Se habilitará para tal fin la posibilidad de que los alumnos 
-se inscriban al comienzo de cada cuatrimestre a esta modalidad, de la misma manera que lo 
-hacen para una materia que forma parte de la currícula. Los requisitos para inscribirse a 
-la cursada siguen la misma normativa que para el resto de las otras modalidades de TIP.
+\articulo Los alumnos que opten por esta modalidad, deberán inscribirse a la
+misma al comienzo del cuatrimestre, utilizando los mismos
+mecanismos con los cuales se inscriben a las materias que forman parte de la currícula. 
 
-\articulo El \profesorTIP{}  podrá nombrar a un especialista en el caso de que el
-tema del proyecto lo requiera. De todas maneras, la responsabilidad del seguimiento seguirá recayendo
-en el \profesorTIP{}.
+\articulo Los requisitos para inscribirse a la cursada siguen la misma normativa
+que para el resto de las otras modalidades de TIP, según el \artCondInscripcion.
 
-\articulo Los requisitos necesarios para ser \profesorTIP{} son los mismos que para ser docente
-de la Universidad Nacional de Quilmes según la resolución XXXXX %TODO: Ver cuál es
+\articulo La dirección de carrera, en conjunto con la secretaría académica,
+establecerán un aula y un horario semanal en el cual se llevarán adelante las
+tareas de desarrollo, seguimiento y supervisión del TIP. Se designarán 5 horas
+semanales para tal actividad.
+
+\articulo El inicio y fin del régimen de cursada se establecerá de acuerdo al
+calendario académico vigente. \referencia{Regimen}
+
+\seccion{ PROFESOR DEL TRABAJO DE INSERCIÓN PROFESIONAL}
+
+\articulo El TIP deberá contar con una supervisión. La misma será llevada a
+cabo por el \profesorTIP{}. 
+
+\articulo Podrá ser nombradro \profesorTIP{} cualquier docente interino u
+ordinario de la UNQ, quien debe poseer título de grado afín a la informática o
+mérito equivalente.
+\nota{quedó bien esto? nótese que para este cargo no se exige antiguedad como
+en la dirección de TIP}
 
 \articulo Son funciones del \profesorTIP{}:
 \begin{itemize}
  \item Decidir el tema y plan del TIP verificando que la
  propuesta puede desarrollarse en los tiempos establecidos en el
- artículo 7°.
+ \artHoras y dentro del régimen de cursada establecido en el \artRegimen.
  \item Supervisar el efectivo cumplimiento y dedicación del estudiante en
  sus actividades, estableciendo un método de seguimiento y
- manteniendo reuniones periódicas con el estudiante.
+ manteniendo reuniones periódicas con el o los estudiantes.
  \item Coordinar con el Director de Carrera el uso de los recursos de la
  UNQ verificando su disponibilidad.
  \item Controlar que se cumpla con el alcance del TIP propuesto en la
  presentación correspondiente.
- \item Ser plenamente responsable de todo lo presentado por el
- estudiante en relación al TIP.
  \item Evaluar al alumno en las presentaciones periódicas y final del TIP
  \item Participar activamente en la detección y solución de los problemas
  que pudieran surgir durante el desarrollo del trabajo.
- \item cumplir con todos los requisitos exigidos por la universidad para los profesores a cargo de curso:
- completado de actas de cursado, firma de libretas, establecer fechas límite, entre otras.
+ \item Cumplir con todos los requisitos exigidos por la universidad para los
+ profesores a cargo de curso.
+ \item Elevar a la dirección de carrera, al finalizar la cursada, las entregas
+ finales aprobadas de todos los TIP realizados durante el curso.
 \end{itemize}
 
+\articulo El \profesorTIP{} podrá solicitar a la dirección de carrera que
+se designe a un especialista como consultor técnico en el caso de que el tema
+del proyecto lo requiera, cuya responsabilidad es asistir técnicamente al
+\profesorTIP y al o los estudiantes.
+
+\nota{hace falta poner los requisits para ser consultor? y las resupongo que no,
+creo que queda claro que alcanza con ser un especialista}
 
 \seccion{PROPUESTA INICIAL}
 
@@ -396,12 +467,11 @@ que sirva como estudio de factibilidad práctico.
 \articulo La propuesta debe ser presentada dentro del horario de cursada previsto al \profesorTIP{}
 quien podrá solicitar los ajustes que considere necesarios para la admisión de los TIP. 
 
-
 \seccion{SEGUIMIENTO DEL TRABAJO}
 
 \articulo Una vez establecidas las pautas de trabajo y los plazos, 
-su cumplimiento es obligatorio para conservar la regularidad de la materia y la consiguiente
-aprobación del TIP.
+su cumplimiento es obligatorio para conservar la regularidad de la cursada y la
+consiguiente aprobación del TIP.
 
 \articulo En el caso de no poder asistir a cualquiera de las entregas presenciales, el estudiante 
 debe informar por escrito en un plazo razonable el motivo de la inasistencia y proponer un nuevo 
@@ -409,11 +479,11 @@ horario al \profesorTIP{}.
 
 \seccion{EVALUACIÓN}
 
-\articulo La culminación del TIP implica la aprobación de las entregas parciales y la final,
-que consistirá en 
+\articulo La aprobación del TIP implica la aprobación de las entregas parciales
+y la final, que consistirán en 
 \begin{itemize}
  \item realizar una demostración del producto de software desarrollado
- \item presentar la documentación respaldatoria del trabajo, en papel o bien en formato digital
+ \item presentar la documentación respaldatoria del trabajo en formato digital
  \item responder las preguntas que formule el \profesorTIP{}
 \end{itemize}
 
@@ -422,18 +492,39 @@ que consistirá en
 \articulo Cada entrega deberá constar de
 \begin{itemize}
  \item un incremento o producto de software funcionando
- \item la documentación respaldatoria que puede presentarse por escrito o bien en formato digital
+ \item la documentación respaldatoria que puede presentarse formato digital
  \item y la presentación de la entrega al \profesorTIP{}
 \end{itemize}
+
+\nota{Puse que las entregas son en formato digital, eso no implica que puedan
+además traer el papel impreso, pero quiero exigir la entrega digital porque eso
+en más fácil de archivar}
+
+\articulo La entrega final, luego de ser aprobada, deberá incluir dos ejemplares
+debidamente encuadernados de toda la documentación respaldatoria del trabajo.
 
 \seccion{PRESENTACIÓN ORAL}
 
 \articulo Una vez que el \profesorTIP{} haya aprobado el TIP al o a los estudiantes, 
 se hará una presentación formal, abierta y pública dentro del ámbito de la Universidad. 
 
-\articulo El o los estudiantes y el \profesorTIP{}
-coordinarán la fecha de presentación oral con el Director de la Carrera, dentro de los 30
-días a partir de la entrega de la versión final.
+\articulo Para realizar la presentación, el o los estudiantes podrán adeudar
+hasta una materia cada uno.
+\referencia{CondPresentacion}
+
+\articulo En caso de cumplir con \artCondPresentacion al momento de la
+aprobación de la entrega final, el o los estudiantes y el \profesorTIP{}
+coordinarán la fecha de presentación oral y publica con el Director de la
+Carrera dentro de los 30 días siguientes.
+
+\articulo En caso de no cumplir con \artCondPresentacion al momento de la
+aprobación de la entrega final. La presentación oral y pública quedará en
+suspenso hasta que se cumpla con dicho artículo, luego de lo cual, los estudiantes coordinarán con el
+Director de la Carrera la fecha de presentación oral dentro de los 30 días
+siguientes.
+
+\articulo Es condición necesaria la realización de la presentación oral para la
+aprobación  del TIP.
 
 \articulo La Dirección de la Carrera se hará cargo de las gestiones
 necesarias que habiliten la presentación oral y pública en el día prefijado.
@@ -442,13 +533,13 @@ necesarias que habiliten la presentación oral y pública en el día prefijado.
 los aspectos más sobresalientes del trabajo realizado. Tendrá una duración mínima de
 30 minutos y máxima de 45 minutos.
 
-
 \capitulo{ARCHIVO Y DIFUSIÓN}
 
-\articulo Una vez aprobado el TIP, en caso de corresponder un ejemplar será destinado a la
+\articulo Una vez aprobado el TIP un ejemplar será destinado a la
 Biblioteca general de la Universidad Nacional de Quilmes y otro quedará en la
 Dirección de la Carrera. Para la documentación con formato digital, la Dirección de Carrera
 proveerá los mecanismos que permitan almacenar la información para continuar futuros trabajos e investigaciones.
+\cambio{Agrega la documentación digital}
 
 \articulo Los eventuales aspectos legales referidos a la propiedad
 intelectual que pueden derivar del desarrollo de los Trabajos de Inserción Profesional

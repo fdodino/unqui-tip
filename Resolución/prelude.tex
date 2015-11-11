@@ -43,8 +43,11 @@
 \InputIfFileExists{preludeauxfile}{\typeout{preludeauxfile file
 	doesn't exist}}
 
-
-
+\newif\ifdraft
+\draftfalse
+\newcommand{\nota}[2][nota]{\ifdraft \textcolor{red}{#1: #2}\fi}
+\newcommand{\nuevo}[1]{\nota[Nuevo]{#1}}
+\newcommand{\cambio}[1]{\nota[Cambio]{#1}}
 
 
 \newcommand{\referencia}[1]{
@@ -63,22 +66,22 @@
 
 	\immediate\write\preludeauxfile{
 		\noexpand\expandafter\noexpand\newcommand\noexpand\expandafter{\noexpand\csname
-		art#1\noexpand\endcsname}{art\noexpand\'iculo
+		art#1\noexpand\endcsname}{Art\noexpand\'iculo
 		\arabic{articulosCounter}\noexpand\ordinal}
 	}
 	\immediate\write\preludeauxfile{
 		\noexpand\expandafter\noexpand\newcommand\noexpand\expandafter{\noexpand\csname
-		cap#1\noexpand\endcsname}{cap\noexpand\'itulo
+		cap#1\noexpand\endcsname}{Cap\noexpand\'itulo
 		\arabic{capitulosCounter}\noexpand\ordinal}		
 	}
 	\immediate\write\preludeauxfile{
 		\noexpand\expandafter\noexpand\newcommand\noexpand\expandafter{\noexpand\csname
-		sec#1\noexpand\endcsname}{secci\noexpand\'on
+		sec#1\noexpand\endcsname}{Secci\noexpand\'on
 		\arabic{capitulosCounter}\noexpand\ordinal}		
 	}
 	\immediate\write\preludeauxfile{
 		\noexpand\expandafter\noexpand\newcommand\noexpand\expandafter{\noexpand\csname
-		anexo#1\noexpand\endcsname}{anexo
+		anexo#1\noexpand\endcsname}{Anexo
 		\Roman{anexosCounter}}		
 	}
 		
